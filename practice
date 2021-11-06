@@ -1,0 +1,37 @@
+name = input("Enter your name: ")
+print("Type'm' for Manager, 't'for Team leader, 'e' for Employee.")
+post = input("Enter your post: ")
+mon = input("Enter the salary month: ")
+day = int(input("How many days were you present? : "))
+x = input("did you do work overtime? (type 'y' if yes, 'n' if no)")
+
+if x=="y":
+  ovr = int(input("how many days did you work overtime? : "))
+
+def salary():
+  b = day + ovr
+
+  if day<i:
+    if post =="m":
+      s = (bin/2)*2000
+      print(f"your salary for this month is: {s}")
+
+    if post =="t":
+      p = (b/2)*1800
+      print(f"your salary for this month is: {p}")
+
+    if post =="e":
+      k = (b/2)*1500
+      print(f"your salary for this month is: {k}")
+
+  else:
+      print("invalid input")
+
+if mon =="jan"or "mar" or "may" or "july" or "aug" or "oct" or "dec":
+  i = 31 
+elif mon == "apr" or "jun" or "sep" or "nov":
+  i = 30
+else:
+  i = 28
+
+salary()
